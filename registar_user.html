@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <style>
+            body {
+                padding-top: 50px;
+                padding-bottom: 20px;
+            }
+        </style>
+        <link rel="stylesheet" href="assets/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="assets/css/main.css">
+
+        <script src="assets/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+	<title></title>
+</head>
+<body>
+<ul class="nav nav-tabs" role="tablist"><a class="btn btn-success" href="administraccion.html">Volver al inicio</a>
+    <li role="presentation" class="active"><a href="#agregar_prod" aria-controls="home" role="tab" data-toggle="tab">Agregar usuario</a></li>
+    <li role="presentation"><a href="#modificar_prod" aria-controls="profile" role="tab" data-toggle="tab">Modificar usuario</a></li>
+    <li role="presentation"><a href="eliminar_user.php" aria-controls="messages" role="tab" data-toggle="tab">Eliminar usuario</a></li>
+  </ul>
+     <div class="jumbotron">
+      <div class="container">
+        <h2>Registrar usuario</h2>
+     
+<form action="phps/insertaruser.php" method="post"> 
+<div id="navbar" class="navbar-collapse collapse">
+          <form class="navbar-form navbar-right" role="form">
+            <div class="form-group">
+            <input type="text" placeholder="nombre" name="name"  class="form-control" required="true">
+            </div>
+            <div class="form-group">
+            <input type="text" placeholder="apellido" name="lastname"  class="form-control" required="true">
+            </div>
+            <div class="form-group">
+            <select id="role"></select>
+            </div>
+            <div class="form-group">
+            <input type="text" placeholder="rol" name="role"  class="form-control" required="true">
+            </div>
+            <div class="form-group">
+            <input type="text" placeholder="nombre de usuario" name="username"  class="form-control" required="true">
+            </div>
+            <div class="form-group">
+              <input type="password" placeholder="contraseña" name="password"  class="form-control" required="true">
+            </div>
+            <button type="submit" class="btn btn-success">Registrar</button>
+          </form>
+        </div>
+      </div>
+      </form> 
+ </div>
+    </div>
+          <script type="text/javascript" src="assets/js/jquery-1.9.0rc1.js"></script>
+    <script type="text/javascript" src="assets/js/index/mostrarrol.js"></script>
+</body>
+</html>
